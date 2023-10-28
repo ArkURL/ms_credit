@@ -1,0 +1,22 @@
+[profile]
+# 指向你配置文件的路径，使用单引号包裹
+path = 'C:\Users\liao\AppData\Local\Microsoft\Edge\User Data\Default'
+[search_option]
+# 搜索关键字
+keywords = [
+    "Bocchi the Rock!",
+    "Yuzzu Soft",
+    "Return to Future: 1999",
+    "Yuru Camp",
+    "Fly me to the moon",
+    "Video killed the radio star"
+]
+# 基础搜索路径
+base_url = "http://cn.bing.com/search?q="
+# 是否使用桌面端、移动端访问
+pc_on = true
+mb_on = true
+[loop_time]
+# 搜索次数，根据分数上限推导
+pc = 30
+mb = 20
