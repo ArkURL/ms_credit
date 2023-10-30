@@ -5,7 +5,7 @@
 利用Selenium自动搜索来获取微软积分，微软积分查看地址：https://rewards.bing.com/
 #### 有什么用？
 微软推出了搜索积分机制，每日搜索可以获取一定积分，积分可以用于兑换物品。
-![兑换物品一览](public\msedge_TYcLdp7CKf.png)(https://rewards.bing.com/redeem/?form=dash_2)
+![兑换物品一览](public/msedge_TYcLdp7CKf.png)(https://rewards.bing.com/redeem/?form=dash_2)
 #### 每日积分获取
 目前一天可以获取150积分，如果使用Edge浏览器访问还可以额外获得12积分，因此推荐使用Edge浏览器。
 ![一日积分](public/msedge_ZYW67G3sC0.png)
@@ -13,6 +13,7 @@
 ### 浏览器Driver安装
 Selenium需要安装对应浏览器的driver才能正常启动浏览器。启动项目前请检查是否是否安装了对应浏览器的driver，并且driver的版本号和浏览器的版本号是否一致。
 可参考：https://www.jianshu.com/p/5e6f943aadb4
+
 安装好driver后可以将其放到浏览器配置文件夹中，也可以放到项目路径中，推荐放到项目根目录中使用。
 
 #### 用户配置路径查看
@@ -48,9 +49,12 @@ mb = 20
 
 ### 不同浏览器适配
 项目使用Edge浏览器运行，其他浏览器也支持，不过需要修改源代码。对于Chrome浏览器，需要将`main.py`中
+
 `from selenium.webdriver.edge.options import Options`修改为
 `from selenium.webdriver.chrome.options import Options`，
+
 并将`driver = webdriver.Edge(options=options)`修改为`driver = webdriver.Chrome(options=options)`。
+
 同理，对于其他浏览器也是同样。
 
 
