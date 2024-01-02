@@ -1,6 +1,6 @@
 [profile]
 # 指向你配置文件的路径，使用单引号包裹
-path = 'C:\Users\liao\AppData\Local\Microsoft\Edge\User Data\Default'
+path = 'C:\Users\{your_device_username}\AppData\Local\Microsoft\Edge\User Data\Default'
 [search_option]
 # 搜索关键字
 keywords = [
