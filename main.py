@@ -31,6 +31,7 @@ def random_query_with_sleep():
 if is_pc_on:
     options = Options()
     options.add_argument(f"--user-data-dir={profile_path}")
+    options.add_argument('--ignore-certificate-errors-spki-list')
     driver = webdriver.Edge(options=options)
 
     for i in range(loop_time_dict["pc"]):
@@ -42,6 +43,7 @@ if is_mb_on:
     options = Options()
     options.add_argument(f"--user-data-dir={profile_path}")
     options.add_argument("--auto-open-devtools-for-tabs")
+    options.add_argument('--ignore-certificate-errors-spki-list')
     mobileEmulation = {  
         "deviceMetrics": { "width": 375, "height": 812, "pixelRatio": 3.0 },  
         "userAgent" : "Mozilla/5.0 (BB10; Touch) AppleWebKit/537.10+ (KHTML, like Gecko) Version/10.0.9.2372 Mobile Safari/537.10+ Edg/118.0.0.0" 
